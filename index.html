@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form onsubmit="return results();" id= "regForm" action="/action_page.php">
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab"><h3>Question 1</h3><h2>What size dog are you interested in?</h2>
+    <input type="radio" name="size" id= "size1" value="Small (up to 22 pounds)"> Small (up to 22 pounds)<br>
+    <input type="radio" name="size" id= "size2" value="Medium (23 to 45 pounds)"> Medium (23 to 45 pounds)<br>
+    <input type="radio" name="size" id= "size3" value="Large (24 and up)"> Large (24 and up)<br>
+  </div>
+  <div class="tab"><h3>Question 2</h3><h2>How affectionate would you like your dog to be?</h2>
+    <input type="radio" name="loyality" id= "loyality1" value="My little shadow. Follows me everywhere."> My little shadow. Follows me everywhere.<br>
+    <input type="radio" name="loyality" id= "loyality2" value="Gives me some love when I get home, but keeps to it's self most of the time"> Gives me some love when I get home, but keeps to it's self most of the time<br>
+    <input type="radio" name="loyality" id= "loyality3" value="Independent"> Independent<br>
+  </div>
+  <div class="tab"><h3>Question 3</h3><h2>How trainable would you like your dog to be?</h2>
+    <input type="radio" name="trainable" id= "trainable1" value="Very trainable. I plan to teach all the basic commands, plus a lot of fun tricks"> Very trainable. I plan to teach all the basic commands, plus a lot of fun tricks<br>
+    <input type="radio" name="trainable" id= "trainable2" value="Fairly trainable. He needs to know all the basic commands"> Fairly trainable. He needs to know all the basic commands<br>
+    <input type="radio" name="trainable" id= "trainable3" value="Not very trainable. I have a laid-back approach to rules and commands"> Not very trainable. I have a laid-back approach to rules and commands<br>
+  </div>
+  <div class="tab"><h3>Question 4</h3><h2>How much maintenance and grooming are you able to provide for your dog?</h2>
+    <input type="radio" name="grooming" id="grooming1" value="I am able to groom my dog 5 - 7 times a week as well as frequent the groomer"> I am able to groom my dog 5 - 7 times a week as well as frequent the groomer<br>
+    <input type="radio" name="grooming" id="grooming2" value="I am able to groom my dog 3 - 5 times a week with the occasional visit to a groomer"> I am able to groom my dog 3 - 5 times a week with the occasional visit to a groomer<br>
+    <input type="radio" name="grooming" id="grooming3" value="I want a dog that's as low maintenance as possible"> I want a dog that's as low maintenance as possible<br>
+  </div>
+  <div class="tab"><h3>Question 5</h3><h2>What kind of temperature tolerance does your new dog need to have?</h2>
+    <input type="radio" name="temperature" id="temperature1" value="I live in a warm climate, so he needs to tolerate hot weather"> I live in a warm climate, so he needs to tolerate hot weather<br>
+    <input type="radio" name="temperature" id="temperature2" value="I live in a cold climate, so he needs to tolerate cold weather"> I live in a cold climate, so he needs to tolerate cold weather<br>
+    <input type="radio" name="temperature" id="temperature3" value="I live where it's warm during summer and cold during winter, so he needs to tolerate both warm and cold weather"> I live where it's warm during summer and cold during winter, so he needs to tolerate both warm and cold weather<br>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+<script type="text/javascript" src="jstyle.js"></script>
+</body>
+</html>

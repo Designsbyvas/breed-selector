@@ -1,0 +1,187 @@
+/* style the homepage */
+html, body {
+  height: 100%;
+  margin: 0;
+  /* background-color: #f1f1f1; */
+  background: linear-gradient(-135deg, #656ced, #02f0dd);
+}
+
+h1 {
+   font-size: 50px;
+   font-family: "Raleway";
+   color: #333;
+}
+
+h2{
+  font-family: 'Nexa Light';
+  font-size: 30px;
+  color: #333;
+}
+
+h3 {
+  font-family: "opensans";
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+p {
+ font-family: "open sans";
+ font-size: 16px;
+ color: #333;
+
+}
+
+#bkg {
+  height: 100vh;
+  background: url(images/homepage_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+ animation: shrink 10s infinite alternate;
+}
+
+ /* @keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+} */
+
+#page1 {
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#caption {
+  height: 300px;
+  width: 550px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
+  padding-top: 60px;
+  padding-left: 40px;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+#button {
+    background: linear-gradient(-135deg, #ff0270, #ff8604);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+/* .button:hover {
+    background-color: #4CAF50;
+    color: white;
+  } */
+
+#prevBtn {
+  background: linear-gradient(-135deg, #656ced, #02f0dd);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 140px;
+  }
+
+
+#nextBtn {
+  background: linear-gradient(-135deg, #ff0270, #ff8604);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 140px;
+  }
+
+a {
+  font-family: open sans;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #05ecde;
+    text-decoration: none;
+}
+
+
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 60%;
+  min-width: 300px;
+  font-family: opensans;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Raleway";
+  border: 1px solid #aaaaaa;
+  margin: 8px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #05eede;
+}
